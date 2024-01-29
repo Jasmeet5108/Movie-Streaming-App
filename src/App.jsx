@@ -1,13 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Popular from "./components/sections/movies/Popular";
-import Toprated from "./components/sections/movies/Toprated";
-import Upcoming from "./components/sections/movies/Upcoming";
-import Airingtoday from "./components/sections/TV Shows/Airingtoday";
-import OnAir from "./components/sections/TV Shows/OnAir";
-import Populartv from "./components/sections/TV Shows/Populartv";
-import Topratedtv from "./components/sections/TV Shows/Topratedtv";
+import Movie from "./components/Moviecontainer";
 
+const apiKey = import.meta.env.VITE_API_KEY
 
 function App() {
   return (
@@ -17,18 +12,13 @@ function App() {
         <Navbar />
 
         <Routes>
-
-          {/* Movies */}
-          <Route path="/" element={<Popular />} />
-          <Route path="/top-rated" element={<Toprated />} />
-          <Route path="/upcoming" element={<Upcoming />} />
-
-          {/* TV Shows */}
-          <Route path="/airing-today" element={<Airingtoday />} />
-          <Route path="/on-air" element={<OnAir />} />
-          <Route path="/popular-tv" element={<Populartv />} />
-          <Route path="/top-rated-tv" element={<Topratedtv />} />
-
+          <Route path="/" element={<Movie apiKey={apiKey} type="movie" heading1="Movies" heading2="Popular" key="general" category="popular" />} />
+          <Route path="/top-rated" element={<Movie apiKey={apiKey} type="movie" heading1="Movies" heading2="Top Rated" key="Top-Rated-Movies" category="top_rated" />} />
+          <Route path="/upcoming" element={<Movie apiKey={apiKey} type="movie" heading1="Movies" heading2="Upcoming" key="Upcoming" category="upcoming" />} />
+          <Route path="/airing-today" element={<Movie apiKey={apiKey} type="tv" heading1="Tv Shows" heading2="Airing Today" key="Airing-today" category="airing_today" />} />
+          <Route path="/on-air" element={<Movie apiKey={apiKey} type="tv" heading1="Tv Shows" heading2="On the Air" key="On air" category="on_the_air" />} />
+          <Route path="/popular-tv" element={<Movie apiKey={apiKey} type="tv" heading1="Tv Shows" heading2="Popular" key="Popular Tv" category="popular" />} />
+          <Route path="/top-rated-tv" element={<Movie apiKey={apiKey} type="tv" heading1="Tv Shows" heading2="Top-rated" key="Top-rated-tv" category="top_rated" />} />
         </Routes>
 
       </BrowserRouter>

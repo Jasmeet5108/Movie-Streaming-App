@@ -79,7 +79,8 @@ const Navbar = () => {
 
 
       {/* SideBar Menu */}
-      <div id='sideBar' className={`${menu} sticky top-0 z-20 opacity-100 md:hidden rounded-md transition bg-[#113442] w-2/3 mt-[-60px]`}>
+      <div id='sideBar' className={`${menu} sticky top-0 z-20 opacity-100 md:hidden rounded-md transition bg-[#113442] h-[95vh] w-2/3 mt-[-60px]`}>
+
         {/* Movies */}
         <ul className='text-white text-xl flex flex-col justify-center items-center space-y-7 py-9'>
           <p className='font-bold text-3xl text-white underline underline-offset-8'>Movies</p>
