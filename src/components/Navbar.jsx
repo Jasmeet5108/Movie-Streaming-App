@@ -45,11 +45,16 @@ const Navbar = () => {
       </header>
 
       {/* Categories */}
+
+      {/* Movies */}
       <div className='hidden sm:block mt-4'>
         <p className='text-[26px] font-bold text-white text-center'>Movies</p>
         <ul className='text-white sm:mt-3 text-xl sm:flex sm:justify-center sm:space-x-8 blg:space-x-12 overflow-x-scroll whitespace-nowrap scrollbar-hide'>
           <li className='hover:animate-bounce'>
-            <Link to="/">Popular</Link>
+            <Link to="/">Now Playing</Link>
+          </li>
+          <li className='hover:animate-bounce'>
+            <Link to="/popular">Popular</Link>
           </li>
           <li className='hover:animate-bounce'>
             <Link to="/upcoming">Upcoming</Link>
@@ -59,6 +64,7 @@ const Navbar = () => {
           </li>
         </ul>
 
+        {/* TV Shows */}
         <p className='text-[26px] sm:mt-6 font-bold text-white text-center'>Tv Shows</p>
         <ul className='text-white sm:mt-3 text-xl sm:flex sm:justify-center sm:space-x-8 blg:space-x-12 overflow-x-scroll whitespace-nowrap scrollbar-hide'>
           <li className='hover:animate-bounce'>
@@ -79,13 +85,16 @@ const Navbar = () => {
 
 
       {/* SideBar Menu */}
-      <div id='sideBar' className={`${menu} sticky top-0 z-20 opacity-100 md:hidden rounded-md transition bg-[#113442] h-[95vh] w-2/3 mt-[-60px]`}>
+      <div id='sideBar' className={`${menu} py-20 sticky top-0 z-20 opacity-100 md:hidden rounded-md transition bg-[#113442] h-[830px] w-2/3 mt-[-60px]`}>
 
         {/* Movies */}
         <ul className='text-white text-xl flex flex-col justify-center items-center space-y-7 py-9'>
           <p className='font-bold text-3xl text-white underline underline-offset-8'>Movies</p>
           <li>
-            <Link onClick={crossMenu} to="/">Popular</Link>
+            <Link onClick={crossMenu} to="/">Now Playing</Link>
+          </li>
+          <li>
+            <Link onClick={crossMenu} to="/popular">Popular</Link>
           </li>
           <li>
             <Link onClick={crossMenu} to="/upcoming">Upcoming</Link>
