@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Footer = () => {
-    // console.log("Footer hun mai")
     return (
         <footer className='mt-4'>
             <div className='text-white text-sm bg-[#4c4a4a] w-full p-2 text-center'>
