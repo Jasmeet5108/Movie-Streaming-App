@@ -85,7 +85,7 @@ const Navbar = () => {
 
 
       {/* SideBar Menu */}
-      <div id='sideBar' className={`${menu} py-20 sticky top-0 z-20 opacity-100 md:hidden rounded-md transition bg-[#113442] h-[830px] w-2/3 mt-[-60px]`}>
+      <div id='sideBar' className={`${menu} py-2 sticky top-0 z-20 opacity-100 md:hidden rounded-md transition bg-[#113442] h-[720px] w-2/3 mt-[-60px]`}>
 
         {/* Movies */}
         <ul className='text-white text-xl flex flex-col justify-center items-center space-y-7 py-9'>
@@ -120,7 +120,7 @@ const Navbar = () => {
             <Link onClick={crossMenu} to="/top-rated-tv">Top Rated</Link>
           </li>
         </ul>
-        <svg onClick={crossMenu} className='absolute top-3 right-2' xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 24 24" fill="none">
+        <svg onClick={crossMenu} className='absolute top-3 right-2' xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 24 24" fill="none">
           <path d="M19 5L5 19M5 5L19 19" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </div>

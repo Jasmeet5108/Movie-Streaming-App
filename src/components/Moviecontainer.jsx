@@ -20,7 +20,7 @@ const Movie = (props) => {
 
   return (
     <>
-      <h2 className='text-white font-bold text-3xl pad:text-4xl text-center mt-[-700px] sm:mt-[-650px] md:mt-16'>{props.heading1} - {props.heading2}</h2>
+      <h2 className='text-white font-bold text-3xl pad:text-4xl text-center mt-[-600px] sm:mt-[-600px] md:mt-16'>{props.heading1} - {props.heading2}</h2>
       <div className="cardContainer flex flex-wrap justify-center mt-[-25px] gap-6">
         {data.map((item, index) =>
           <div key={index}>
