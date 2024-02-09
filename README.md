@@ -1,8 +1,10 @@
-# React + Vite
+# Cinesphere
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- This is a movie streaming application that fetches real time data from an api provided by [TMDB](https://www.themoviedb.org/).
 
-Currently, two official plugins are available:
+- This application has been made using ReactJs and TailwindCSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Clone this Repository and then run the following commands in your Powershell/Terminal:- 
+
+> npm install<br> npm run dev
+
