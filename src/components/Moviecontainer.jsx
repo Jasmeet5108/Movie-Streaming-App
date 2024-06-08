@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Moviecategory from './Movies';
 
-
 const Movie = (props) => {
 
   const [data, setData] = useState([]);
@@ -22,7 +21,7 @@ const Movie = (props) => {
     <>
       <h2 className='text-white font-bold text-3xl pad:text-4xl text-center mt-[-600px] sm:mt-[-600px] md:mt-16'>{props.heading1} - {props.heading2}</h2>
       <div className="cardContainer flex flex-wrap justify-center mt-[-25px] gap-6">
-        {data.map((item, index) =>
+        {data && data.map((item, index) =>
           <div key={index}>
             <Moviecategory img={item.poster_path} desc={item.overview} name={item.title ? item.title : item.name} date={item.release_date ? item.release_date : item.first_air_date} vote={item.vote_average} popularity={item.popularity} />
           </div>

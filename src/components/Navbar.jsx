@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className='sticky top-0 sm:relative bg-[#06202a] z-10'>
+      <header className='sticky top-0 sm:relative bg-[#00091d] z-10'>
 
         <nav className='flex justify-between items-center p-2 max-w-screen-2xl mx-auto'>
 
